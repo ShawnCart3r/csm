@@ -2,93 +2,104 @@ const legion = [
 
     {
 
-        id: 0,
+        id: -1,
         img: "./image/gathered.jpg",
-        category: "all",
-        description: "",
-        url: "https://warhammer40k.fandom.com/wiki/Black_Legion",
+        category: "gathered",
+        description: "Gathered",
+        url: "https://warhammer40k.fandom.com/wiki/Chaos_Space_Marines",
     
     },
+
+
+    {
+
+        id: 0,
+        img: "./image/gathered.jpg",
+        category: "gathered",
+        description: "Gathered",
+        url: "https://warhammer40k.fandom.com/wiki/Chaos_Space_Marines",
     
+    },
+
  
     {
 
-    id: 1,
+    id: 2,
     img: "./image/black.jpg",
     category: "Black Legion",
-    description: "",
+    description: "Black Legion",
     url: "https://warhammer40k.fandom.com/wiki/Black_Legion",
 
 },
 
 {
-    id: 2,
+    id: 3,
     img: "./image/emperor.webp",
     category: "Emperor's Children",
-    description: "",
+    description: "Emperor's Children",
     url: "https://warhammer40k.fandom.com/wiki/Emperor%27s_Children",
 
 },
 
 {
-    id: 3,
+    id: 4,
     img: "./image/eater.jpg",
     category: "World Eaters",
-    description: "",
+    description: "World Eaters",
     url: "https://warhammer40k.fandom.com/wiki/World_Eaters",
 
 },
 
 {
-    id: 4,
+    id: 5,
     img: "./image/death.jpg",
     category: "Death Guard",
-    description: "",
+    description: "Death Guard",
     url: "https://warhammer40k.fandom.com/wiki/Death_Guard",
 
 },
 
 {
-    id: 5,
+    id: 6,
     img: "./image/son.png",
     category: "Thousand Sons",
-    description: "",
+    description: "Thousand Sons",
     url: "https://warhammer40k.fandom.com/wiki/Thousand_Sons",
 
 },
 
 {
-    id: 6,
+    id: 7,
     img: "./image/iron.webp",
     category: "Iron Warriors",
-    description: "",
+    description: "Iron Warriors",
     url: "https://warhammer40k.fandom.com/wiki/Iron_Warriors",
 
 },
 
 {
-    id: 7,
+    id: 8,
     img: "./image/night.jpg",
     category: "Night Lords",
-    description: "",
+    description: "Night Lords",
     url: "https://warhammer40k.fandom.com/wiki/Night_Lords",
 
 },
 
 {
-    id: 8,
+    id: 9,
     img: "./image/word.jpg",
     category: "Word Bearers",
-    description: "",
+    description: "Word Bearers",
     url: "https://warhammer40k.fandom.com/wiki/Word_Bearers",
 
 },
 
 {
-    id: 9,
+    id: 10,
     img: "./image/alpha.jpg",
     category: "Alpha Legion",
-    description: "",
+    description: "Alpha Legion",
     url: "https://warhammer40k.fandom.com/wiki/Alpha_Legion",
 
 },
@@ -139,8 +150,8 @@ function displayLegionItems(legionItems){
         // console.log(item);
         return ` <article class="${item.img}"><img src="${item.img}" class="photo" alt="${item.title}"> <div class="item-info">
         <header>
-          <h4>${item.title}</h4>
-          <h4 class="url"><a href="" target="_blank" ${item.url}</a>info</h4>
+          <h4>${item.description}</h4>
+          <h4 class="url"><a href="${item.url}" target="_blank"</a></h4>
         </header>
         
       </div></article>`;
